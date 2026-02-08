@@ -1,0 +1,215 @@
+body{
+    background-color: #0c1322;
+    font-family: "Archivo Black", sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.title{
+    color: #e2e8f0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 140px;
+}
+
+.homepage-txt{
+    color: #e2e8f0;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.btn{
+    background-color: #575ca8;
+    color: #e2e8f0;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* Add this to your existing CSS */
+
+.navbar {
+    background-color: #1e293b;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    color: #e2e8f0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #60a5fa;
+}
+
+/* Optional: Active/current page indicator */
+.navbar-links a.active {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-input {
+    flex: 1;
+    padding: 15px 20px;
+    background-color: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    color: #e2e8f0;
+    font-size: 16px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.search-input::placeholder {
+    color: #94a3b8;
+}
+
+.search-btn {
+    padding: 15px 30px;
+    background-color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #60a5fa;
+}
+
+.proxy-iframe {
+    width: 100%;
+    height: calc(100vh - 200px);
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #1e293b;
+    display: none;
+}
+
+.proxy-iframe.active {
+    display: block;
+}
+
+#games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: .6vw;
+    padding-bottom: 5vw;
+}
+ 
+#games img {
+    height: 15.6vw;
+    width: 15.6vw;
+    border-radius: 1vw;
+    margin: .5vw;
+    cursor: pointer;
+    user-select: none;
+    transition: transform .2s;
+}
+ 
+#games img:hover {
+    transform: scale(1.01);
+}
+
+/* Game Player Overlay */
+/* Game Player Overlay */
+#gamePlayer {
+    position: fixed;
+    inset: 0;
+    background: #0c1322; /* match site bg */
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Top bar */
+.game-bar {
+    background: #1e293b;
+    padding: 12px 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Buttons */
+.game-bar button {
+    background: #3b82f6;
+    color: #e2e8f0;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.game-bar button:hover {
+    background: #60a5fa;
+    transform: translateY(-1px);
+}
+
+/* Close button emphasis */
+#closeGame {
+    background: #ef4444;
+}
+
+#closeGame:hover {
+    background: #f87171;
+}
+
+/* Iframe */
+#gameFrame {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: #000;
+}

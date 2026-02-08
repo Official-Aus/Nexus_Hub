@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+
+    <body>
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">Nexus Hub</a>
+                <ul class="navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="g.html" class="active">Games</a></li>
+                    <li><a href="#">Scripts</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+        </nav>
+
+        <div id="games">
+            <img src="public/images/bob-the-robber-2.png" data-game="public/games/bob-the-robber-2/" alt="bob the robber 2">
+            <img src="public/images/vex7.jpeg" data-game="public/games/vex7/" alt="vex 7">
+            <img src="public/images/vex6.jpeg" data-game="public/games/vex6/" alt="vex 6">
+            <img src="public/images/moto-x3m.jpg" data-game="public/games/moto-x3m/" alt="moto x3m">
+            <img src="public/images/retro-bowl.jpg" data-game="public/games/retro-bowl/" alt="retro bowl">
+            <img src="public/images/drive-mad.jpg" data-game="public/games/drive-mad/" alt="drive mad">
+            <img src="public/images/slope.jpg" data-game="public/games/slope/" alt="slope">
+            <img src="public/images/motox3m2.jpg" data-game="public/games/motox3m2/" alt="moto x3m2">
+        </div>
+
+        <div id="gamePlayer" style="display: none;">
+            <div class="game-bar">
+                <button id="closeGame">✕</button>
+                <button id="reloadGame">⟳ Reload</button>
+                <button id="fullscreenGame">⛶ Fullscreen</button>
+            </div>
+
+            <iframe id="gameFrame" src=""></iframe>
+        </div>
+
+        
+
+
+
+    <script src="script-games.js"></script>
+    </body>
+</html>
